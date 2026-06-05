@@ -15,8 +15,16 @@ A production-ready Flask backend for asynchronous daily standup updates. Team me
 - **Centralized Error Handling** — All errors return consistent JSON envelopes
 - **Database Migrations** — Flask-Migrate / Alembic
 - **17 passing tests** — Covers health, CRUD, validation, file uploads, stats, pagination
+- 
 
 ---
+
+
+## Screenshot
+
+<img width="500" height="1080" alt="dashboard png (2)" src="https://github.com/user-attachments/assets/fa77752c-371d-4470-a3cd-737072caf00b" />
+
+*Standup submission form in action*
 
 ## Tech Stack
 
