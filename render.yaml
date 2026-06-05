@@ -1,0 +1,18 @@
+services:
+  - type: web_service
+    name: final-standup-logger
+    env: docker
+    branch: main
+    plan: starter
+    dockerfilePath: backend/Dockerfile
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: FLASK_ENV
+        value: production
+      - key: PORT
+        value: "5000"
+      - key: DATABASE_URL
+        value: sqlite:///standup_logger.db
+      - key: CORS_ORIGINS
+        value: https://final-standup-logger.onrender.com
